@@ -1,0 +1,25 @@
+{
+  "name": "wasm-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "wasm-sandbox": "a.out.js"
+  },
+  "scripts": {
+    "build": "make clean; make all & make alljs",
+    "start": "./bin/a.out & http-server &",
+    "stop": "killall node */http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legokichi/wasm-sandbox.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/legokichi/wasm-sandbox/issues"
+  },
+  "homepage": "https://github.com/legokichi/wasm-sandbox#readme"
+}
